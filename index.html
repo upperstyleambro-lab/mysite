@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Systems Engineering Unit</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #111827, #05070d);
+    color: white;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 20px;
+  }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 140px 20px;
+  }
+
+  h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ffffff, #7aa2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: #b6c2d1;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* BUTTONS */
+  .buttons {
+    margin-top: 30px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  .btn.primary {
+    background: #3b82f6;
+    color: white;
+    box-shadow: 0 0 25px rgba(59,130,246,0.4);
+  }
+
+  .btn.secondary {
+    border: 1px solid #334155;
+    color: white;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(10px);
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+  /* SECTIONS */
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #93c5fd;
+  }
+
+  section {
+    margin-top: 80px;
+  }
+
+  /* CARDS */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(12px);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(59,130,246,0.5);
+  }
+
+  /* FORM */
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    background: rgba(255,255,255,0.03);
+    color: white;
+    outline: none;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  /* GLOW EFFECT */
+  .glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59,130,246,0.2), transparent 60%);
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(60px);
+    z-index: -1;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>We Engineer Complex Business Systems for Automation and Scalability.</h1>
+
+    <p>
+      A high-efficiency engineering unit of senior full-stack experts delivering bespoke systems that transform operational chaos into scalable digital infrastructure.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#">Schedule Consultation</a>
+      <a class="btn secondary" href="#">Explore Systems</a>
+    </div>
+  </div>
+
+  <!-- PHILOSOPHY -->
+  <section>
+    <h2>Systems Over Isolated Features</h2>
+    <p>
+      We don’t build features — we design full operational systems. Every product is engineered for scalability, stability and long-term performance.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section>
+    <h2>Core Expertise</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Bespoke Systems</h3>
+        <p>CRM, ERP and enterprise-grade scalable platforms.</p>
+      </div>
+
+      <div class="card">
+        <h3>Accessibility Engineering</h3>
+        <p>WCAG compliance and global digital accessibility standards.</p>
+      </div>
+
+      <div class="card">
+        <h3>Content Automation</h3>
+        <p>Industrial-scale generation of branded digital assets.</p>
+      </div>
+
+      <div class="card">
+        <h3>Product Intelligence</h3>
+        <p>Conversion optimization through system-level UX analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section>
+    <h2>Request System Audit</h2>
+
+    <input placeholder="Full Name"/>
+    <input placeholder="Email"/>
+    <input placeholder="Company Website"/>
+    <textarea rows="5" placeholder="Describe your challenge"></textarea>
+
+    <a class="btn primary" href="#">Submit Request</a>
+  </section>
+
+</div>
