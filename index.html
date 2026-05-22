@@ -202,7 +202,15 @@ textarea {
 </head>
 
 <body>
+<h1>Contact us</h1>
 
+  <form action="/submit" method="POST">
+    <input name="name" placeholder="Name" required>
+    <input name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Request"></textarea>
+
+    <button type="submit">Submit request</button>
+  </form>
 <div class="bg"></div>
 <div class="noise"></div>
 
